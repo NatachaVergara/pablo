@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+/* Parallax img */
+main{
+    width: 100%;
+    height: 91vh;
+    background-image: url('./img/living-divan.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-right: 1px black solid; */
+}
+#cita{
+    font-family: 'Pattaya', sans-serif;
+    width: 45%;
+    margin-left: 30%;
+    /* color: rgb(32, 22, 22); */
+    padding: 17.5% 0px 0px 36px;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px #000000
+
+}
+#divan{
+    
+    /* position: absolute; */
+}
+@media only screen and (max-width: 666px ){
+    #cita{
+        font-size: 1.35rem;
+        width: 75%;
+        margin-left: 10%;
+    }       
+}
