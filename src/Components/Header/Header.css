@@ -7,6 +7,9 @@
 .navbar{
     background-color: black;
 }
+.navbar-toggler{
+    background-color: #e9c33efc !important;
+}
 .navbar-brand{
     margin-left: 10px;
     color: white !important;
