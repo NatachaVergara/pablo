@@ -1,10 +1,10 @@
 import Aside from "../Aside";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Section.css";
+import styles from "./Section.module.scss";
 
 const Section = () => {
   return (
-    <Container id="container">
+    <Container id="container" className={styles.container}>
       <Row>
         <Col>
           <h1 id="bienvenida" >Pablo Lopez - Terapia analítica</h1>
@@ -20,8 +20,8 @@ const Section = () => {
       <Row>
         <Col xs={12} md={6}>
           <section className="d-flex flex-column justify-content-between">
-            <div className="parrafos " >
-              <p className="sobre-mi">
+            <div className={`parrafos ${styles.parrafos}`} >
+              <p className={styles.sobreMi}>
                 Concibo la terapia como un camino de
                 <strong> autoconocimiento y registro de sí </strong>. La idea es
                 que el paciente conforme un espacio donde pueda sentirse libre y
@@ -31,36 +31,36 @@ const Section = () => {
                 y comenzar a trabajarlo. Ésto último supone una decisión.{" "}
               </p>
 
-              <p className="sobre-mi">
+              <p className={styles.sobreMi}>
                 Creo firmemente que, al decidir trabajar sobre nuestros
                 problemas, es la manera correcta de comenzar a resolverlos.
               </p>
             </div>
 
-            <div className="contacto d-flex flex-column justify-content-center">
-                <h1 className="display-4" id="contacto">
-                    Consulta
-                </h1>
-                <p className="lead">Contactame por redes sociales</p>
-                <div className="container redes d-flex justify-content-around">
-                    <a
-                    className="iconos"
-                    href="https://www.facebook.com/psicopablopez"
-                    rel="noreferrer"
-                    target="_blank"
-                    >
-                    {" "}
-                    <i className="fab fa-facebook"></i>
-                    </a>
-                    <a
-                    className="iconos"
-                    rel="noreferrer"
-                    href="https://api.whatsapp.com/send?phone=5491136575775"
-                    target="_blank"
-                    >
-                    <i className="fab fa-whatsapp"></i>
-                    </a>
-                </div>
+            <div className={`contacto d-flex flex-column justify-content-center ${styles.contacto}`}>
+              <h1 className="display-4" id="contacto">
+                Consulta
+              </h1>
+              <p className={styles.lead}>Contactame por redes sociales</p>
+              <div className="container redes d-flex justify-content-around">
+                <a
+                  className={styles.iconos}
+                  href="https://www.facebook.com/psicopablopez"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {" "}
+                  <i className={`fab fa-facebook ${styles.faFacebook}`}></i>
+                </a>
+                <a
+                  className={styles.iconos}
+                  rel="noreferrer"
+                  href="https://api.whatsapp.com/send?phone=5491136575775"
+                  target="_blank"
+                >
+                  <i className={`fab fa-whatsapp ${styles.faWhatsapp} `}></i>
+                </a>
+              </div>
             </div>
           </section>
         </Col>

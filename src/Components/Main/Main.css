@@ -22,11 +22,16 @@ main{
     text-shadow: 2px 2px 4px #000000
 
 }
-#divan{
+/* #divan{
     
-    /* position: absolute; */
-}
+    position: absolute;
+} */
+
+
 @media only screen and (max-width: 666px ){
+    main{
+        display:none
+    }
     #cita{
         font-size: 1.35rem;
         width: 75%;

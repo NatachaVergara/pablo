@@ -1,10 +1,10 @@
 import img from  './img/pp.jpg';
-import './Aside.css'
+import styles from './Aside.module.scss'
 
 const Aside = () => {
     return (
-        <aside>
-            <div className="card">
+        <aside className={styles.aside} >
+            <div className={`card ${styles.card}`}>
                 <img src={img} className="card-img-top" alt="Licenciado Pablo Lopez" />
                 <div className="card-body">
                     <h5 className="card-title" id="sobre-mi">Sobre mi</h5>

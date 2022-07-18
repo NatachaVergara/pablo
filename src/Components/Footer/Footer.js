@@ -1,10 +1,10 @@
-import './Footer.css'
+import styles from './Footer.module.scss'
 const Footer = () => {
     return (
-        <footer>
-            <p> 2021 - Pablo Lopez </p>
+        <footer className={styles.footer}>
+            <p> {new Date().getFullYear()}- Pablo Lopez </p>
         </footer>
-      );
+    );
 }
- 
+
 export default Footer;
