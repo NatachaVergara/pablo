@@ -1,14 +1,104 @@
 .footer {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    background-color: black;
-    padding-bottom: 0.5rem;
-    color: #ccc;
+    width: 100%;
+    color: rgb(10, 10, 10);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        width: 100%;
+    }
+
+
+}
+
+
+
+.contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    h3 {
+        margin: 15px;
+        margin-bottom: 100px;
+        padding: 15px;
+        font-size: 3em;
+
+    }
+
+    .iconosContacto {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .iconos {
+            width: 33.33%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex: 1;
+
+            .icono {
+                width: 80px;
+                height: 80px;
+                
+            }
+
+            .icono1 {
+                background-image: url('./img/facebook64px.png');
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            .icono2 {
+                background-image: url('./img/envelope.png');
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            .icono3 {
+                background-image: url('./img/whatsapp.png');
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            span {
+                font-size: 1.2em;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            p {
+                font-size: 1em;
+                font-family: 'Roboto', sans-serif;
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+
+}
+
+.pie {
+    margin-top: 200px;
 
     p {
         text-align: center;
         font-size: 1.8rem;
         font-family: 'Roboto', sans-serif;
-     
+
     }
 }

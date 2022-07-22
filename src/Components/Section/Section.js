@@ -37,31 +37,7 @@ const Section = () => {
               </p>
             </div>
 
-            <div className={`contacto d-flex flex-column justify-content-center ${styles.contacto}`}>
-              <h1 className="display-4" id="contacto">
-                Consulta
-              </h1>
-              <p className={styles.lead}>Contactame por redes sociales</p>
-              <div className="container redes d-flex justify-content-around">
-                <a
-                  className={styles.iconos}
-                  href="https://www.facebook.com/psicopablopez"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  {" "}
-                  <i className={`fab fa-facebook ${styles.faFacebook}`}></i>
-                </a>
-                <a
-                  className={styles.iconos}
-                  rel="noreferrer"
-                  href="https://api.whatsapp.com/send?phone=5491136575775"
-                  target="_blank"
-                >
-                  <i className={`fab fa-whatsapp ${styles.faWhatsapp} `}></i>
-                </a>
-              </div>
-            </div>
+       
           </section>
         </Col>
         <Col xs={12} md={6}>
