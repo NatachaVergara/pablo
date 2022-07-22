@@ -1,0 +1,48 @@
+.container {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .card {
+        width: 25%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 250px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+    }
+
+
+    @media screen and (max-width: 778px) {
+        height:100%;
+        margin: 150px auto;
+
+        .card{
+            margin: auto 10px;
+        }
+
+    }
+
+    @media screen and (max-width: 500px) {
+        height:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+}
