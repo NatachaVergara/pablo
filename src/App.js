@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Main />
       <Section />
-      <Psicoanalisis/>
+      <Psicoanalisis />
       <Footer />
     </>
   );
