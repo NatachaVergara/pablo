@@ -4,6 +4,7 @@ import terapia from '../../assets/img/terapia.jpg'
 import observable from '../../assets/img/observacionDeSi.jpg'
 
 import styles from './Practicas.module.scss'
+import { Link } from 'react-router-dom'
 const Practicas = () => {
 
 
@@ -17,12 +18,12 @@ const Practicas = () => {
   return (
     <section className={`${styles.container}`}>
       {imgs.map(card => (
-        <div className={`card ${styles.card}`} key={card.id}>
+        <Link className={`card ${styles.card}`} key={card.id} to='/practica'>
           <img src={card.img} className="card-img-top" alt={card.titulo} />
           <div className="card-body">
-            <h5 className="card-title">{card.titulo} </h5>
+            <h5 className="card-title">{card.titulo} </h5>          
           </div>
-        </div>
+        </Link>
       ))}
 
     </section>

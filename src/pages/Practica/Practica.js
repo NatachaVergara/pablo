@@ -22,16 +22,15 @@ const Practica = () => {
     <main className={styles.container}>
       <div className={styles.sectionContainer}>
         {info.map(i => (
-          <section key={i.id}>
-            <Card
-              img={i.img}
-              title={i.title}
-              texto={i.texto}
-              style={styles.divContainer}
 
-              
-            />
-          </section>
+          <Card
+            key={i.id}
+            id={i.id}
+            img={i.img}
+            title={i.title}
+            texto={i.texto}
+            style={styles.divContainer}
+          />
 
 
         ))}
