@@ -1,10 +1,10 @@
 import React from 'react'
-import psicoanalisis from './img/psicoanalisisV.jpg'
-import terapia from './img/terapia.jpg'
-import observable from './img/observacionDeSi.jpg'
+import psicoanalisis from '../../assets/img/psicoanalisisV.jpg'
+import terapia from '../../assets/img/terapia.jpg'
+import observable from '../../assets/img/observacionDeSi.jpg'
 
-import styles from './Cards.module.scss'
-const Psicoanalisis = () => {
+import styles from './Practicas.module.scss'
+const Practicas = () => {
 
 
   let imgs = [
@@ -30,4 +30,4 @@ const Psicoanalisis = () => {
   )
 }
 
-export default Psicoanalisis
+export default Practicas

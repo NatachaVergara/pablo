@@ -1,18 +1,15 @@
 import Header from './Components/Header'
-import Main from './Components/Main'
 import Footer from './Components/Footer'
-import Section from './Components/Section'
-import Psicoanalisis from './Components/CardsImgs/Psicoanalisis';
+import AppRouter from './routes/AppRouter';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Main />
-      <Section />
-      <Psicoanalisis/>
+      <AppRouter />
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

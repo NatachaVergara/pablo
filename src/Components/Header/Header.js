@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -27,13 +28,13 @@ const Header = () => {
                     <div className={`collapse navbar-collapse`} id="navbarNav">
                         <ul className={`navbar-nav  ${styles.nav}`}>
                             <li className="nav-item">
-                                <a className={`nav-link active ${styles.navLink} `} aria-current="page" href="#">Home</a>
+                                <Link className={`nav-link active ${styles.navLink} `} aria-current="page" to={'/'}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link active ${styles.navLink} `} href="#">Features</a>
+                                <Link className={`nav-link active ${styles.navLink} `} to='/practica'>Práctica</Link>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link active ${styles.navLink} `} href="#">Pricing</a>
+                                <Link className={`nav-link active ${styles.navLink} `} to="/">Videos</Link>
                             </li>
 
                         </ul>
