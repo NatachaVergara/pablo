@@ -27,7 +27,7 @@ const Header = () => {
                     <div className={`collapse navbar-collapse`} id="navbarNav">
                         <ul className={`navbar-nav  ${styles.nav}`}>
                             <li className="nav-item">
-                                <a className={`nav-link active ${styles.navLink} `} aria-current="page" href="#">Home</a>
+                                <a className={`nav-link active ${styles.navLink} `} aria-current="page" href="#">Inicio</a>
                             </li>
                             <li className="nav-item">
                                 <a className={`nav-link active ${styles.navLink} `} href="#practica">Práctica</a>

@@ -15,16 +15,18 @@ const Psicoanalisis = () => {
   ]
 
   return (
-    <section className={`${styles.container}`}  id='practica'>
-      {imgs.map(card => (
-        <div className={`card ${styles.card}`} key={card.id}>
-          <img src={card.img} className="card-img-top" alt={card.titulo} />
-          <div className="card-body">
-            <h5 className="card-title">{card.titulo} </h5>
+    <section className={`${styles.container}`} id='practica'>
+      <h3>Práctica</h3>
+      <div className={styles.cardContainer}>
+        {imgs.map(card => (
+          <div className={`card ${styles.card}`} key={card.id}>
+            <img src={card.img} className="card-img-top" alt={card.titulo} />
+            <div className="card-body">
+              <h5 className="card-title">{card.titulo} </h5>
+            </div>
           </div>
-        </div>
-      ))}
-
+        ))}
+      </div>
     </section>
 
   )
