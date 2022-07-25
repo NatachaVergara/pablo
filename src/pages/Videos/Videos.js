@@ -1,30 +1,43 @@
 import React from 'react'
 import styles from './Videos.module.scss'
-
+import { videos } from '../../assets/videos/videos'
+import VideoCard from '../../Components/VideoCard/VideoCard'
 
 const Videos = () => {
+
+
+
     return (
         <main className={styles.container}>
+            <div className={`btn-group ${styles.search}`}>
+                <span type="button" className="btn btn-danger">🔎 Temas</span>
+                <button type="button" className="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span className="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul className="dropdown-menu P-1">
+                    <li>Ansiedad</li>
+                    <li>Depresión</li>
+                    <li>Adicciones</li>
+                    <li>Trastornos Alimenticios</li >
+                </ul >
+            </div >
 
-            <div className={styles.videoContainer}>
-                <div>
-                    <h3>Crisis de ansiedad</h3>
-                    <h5> Ansiedad es una sensación de miedo indefinido, sin saber de qué. Es una reacción normal ante cualquier contingencia vaga que provoca inseguridad </h5>
-
-                </div>
-
-
-                <video width="320" height="240" controls>
-                    <source src="movie.mp4" type="video/mp4" />
-                    <source src="movie.ogg" type="video/ogg" />
-                    Your browser does not support the video tag.
-                </video>
-
-
-            </div>
-
-
-        </main>
+            {
+                videos.map(video =>
+                (
+                    <VideoCard
+                        styles={styles}
+                        name={video.name}
+                        mp4={video.mp4}
+                        ogg={video.ogg}
+                        title={video.title}
+                        subTitle={video.subTitle}
+                        texto={video.texto}
+                        ul={video.ul}
+                    />
+                ))
+            }
+        </main >
     )
 }
 

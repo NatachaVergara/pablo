@@ -8,21 +8,62 @@
     align-items: center;
 }
 
-.videoContainer {
-    width: 90%;
-    height: 100vh;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.search {
+    margin-top: 60px;
+    padding-left: 60px;
+    align-self: flex-start;
 
-        h3, h5{
-            text-align: center;
-            margin: 50px;
-        }
-      
+    li {
+        padding: 10px;
+        cursor: pointer;
+
+    }
 
 
 }
+
+
+.videoContainer {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        width: 50%;
+    }
+
+    h3,
+    p {
+        text-align: start;
+
+    }
+
+    p {
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+}
+
+
+.texto {
+    width: 90%;
+    margin: auto;
+}
+
+
+.divider {  
+    margin-top: 90px;
+    height: 1px;
+
+ 
+}
+
+
