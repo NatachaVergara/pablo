@@ -47,7 +47,7 @@ const Footer = () => {
 
             </section>
             <section id='pie' className={`${styles.pie}`} >
-                <p> {new Date().getFullYear()}- Lic. Pablo Lopez </p>
+                <p> {new Date().getFullYear()} - Pablo Lopez </p>
             </section>
 
 

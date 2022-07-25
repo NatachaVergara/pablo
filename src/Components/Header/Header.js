@@ -36,7 +36,6 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link className={`nav-link active ${styles.navLink} `} to="/videos">Videos</Link>
                             </li>
-
                         </ul>
                     </div>
                 </div>
