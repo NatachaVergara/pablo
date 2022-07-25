@@ -2,7 +2,8 @@ import Header from './Components/Header'
 import Main from './Components/Main'
 import Footer from './Components/Footer'
 import Section from './Components/Section'
-import Psicoanalisis from './Components/CardsImgs/Psicoanalisis';
+import Practica from './Components/Practica';
+
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <Main />
       <Section />
-      <Psicoanalisis/>
+      <Practica/>
       <Footer />
     </>
   );

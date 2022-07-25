@@ -1,9 +1,9 @@
 import React from 'react'
-import psicoanalisis from './img/psicoanalisisV.jpg'
-import terapia from './img/terapia.jpg'
-import observable from './img/observacionDeSi.jpg'
+import psicoanalisis from '../../assets/img/psicoanalisisV.jpg'
+import terapia from '../../assets/img/terapia.jpg'
+import observable from '../../assets/img/observacionDeSi.jpg'
 
-import styles from './Cards.module.scss'
+import styles from './Practica.module.scss'
 const Psicoanalisis = () => {
 
 
@@ -15,7 +15,7 @@ const Psicoanalisis = () => {
   ]
 
   return (
-    <section className={`${styles.container}`}>
+    <section className={`${styles.container}`}  id='practica'>
       {imgs.map(card => (
         <div className={`card ${styles.card}`} key={card.id}>
           <img src={card.img} className="card-img-top" alt={card.titulo} />

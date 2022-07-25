@@ -30,12 +30,11 @@ const Header = () => {
                                 <a className={`nav-link active ${styles.navLink} `} aria-current="page" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link active ${styles.navLink} `} href="#">Features</a>
+                                <a className={`nav-link active ${styles.navLink} `} href="#practica">Práctica</a>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link active ${styles.navLink} `} href="#">Pricing</a>
+                                <a className={`nav-link active ${styles.navLink} `} href="#contacto">Contacto</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
