@@ -24,6 +24,11 @@ const Psicoanalisis = () => {
             <div className="card-body">
               <h5 className="card-title">{card.titulo} </h5>
             </div>
+            <ul>
+              <li>Lorem</li>
+              <li>Lorem</li>
+              <li>Lorem</li>
+            </ul>
           </div>
         ))}
       </div>
