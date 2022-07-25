@@ -17,14 +17,17 @@ const Practicas = () => {
 
   return (
     <section className={`${styles.container}`}>
-      {imgs.map(card => (
+      <h3>Práctica</h3>
+      <div className={styles.cardContainer}>  
+       {imgs.map(card => (
         <Link className={`card ${styles.card}`} key={card.id} to='/practica'>
           <img src={card.img} className="card-img-top" alt={card.titulo} />
           <div className="card-body">
-            <h5 className="card-title">{card.titulo} </h5>          
+            <h5 className="card-title">{card.titulo} </h5>
           </div>
         </Link>
-      ))}
+      ))}</div>
+
 
     </section>
 
