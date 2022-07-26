@@ -5,31 +5,23 @@ import VideoCard from '../../Components/VideoCard/VideoCard'
 
 const Videos = () => {
     const [vids, setVids] = useState(videos)
-    const [value, setValue] = useState('')
 
+    const onSearch = (id) => {
+        let video = vids.filter(v => v.id === id)
+        id === '' ? setVids(videos) : setVids(video)
+    }
 
-    // const onSearch = () => {
-    //     let video = vids.filter(v => v.name === value)
-
-    //     if (value === '')
-    //         setVids(videos)
-    //     else {
-    //         setVids(video)
-    //     }
-
-    // }
-   
 
     return (
         <main className={styles.container}>
-            <div className={`btn-group ${styles.search}`}>
-                <select className="form-select" aria-label="Default select example">
-                    <option value='' onChange={(e) => setValue(e.target.value)} >🔎 Temas</option>
-                    <option value='ANSIEDAD' onChange={(e) => setValue(e.target.value)} >Ansiedad</option>
-                    <option value='DEPRESION' onChange={(e) => setValue(e.target.value)}>Depresión</option>
-                    <option value='ADICCIONES' onChange={(e) => setValue(e.target.value)}>Adicciones</option>
-                    <option value='TRASTORNOS ALIMENTICIOS' onChange={(e) => setValue(e.target.value)} >Trastornos Alimenticios</option>
-                </select>
+            <div className={`dropdown ${styles.search}`}>
+                <button className="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    🔎 Temas
+                </button>
+                <ul className="dropdown-menu">
+                    <li onClick={() => onSearch('')}  >Todo</li>
+                    {vids.map(value => (<li key={value.id} onClick={() => onSearch(value.id)}>{value.tema}</li>))}
+                </ul>
             </div >
 
             {
@@ -37,7 +29,7 @@ const Videos = () => {
                 (
                     <VideoCard
                         styles={styles}
-                        name={video.name}
+                        name={video.tema}
                         mp4={video.mp4}
                         ogg={video.ogg}
                         title={video.title}

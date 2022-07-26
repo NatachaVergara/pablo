@@ -13,6 +13,14 @@
     padding-left: 60px;
     align-self: flex-start;
 
+    li{
+        cursor: pointer;
+        padding:5px;
+        &:hover{
+            background-color:rgb(199, 199, 199);
+        }
+    }
+
 }
 
 

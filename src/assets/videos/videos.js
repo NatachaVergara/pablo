@@ -1,7 +1,7 @@
 export let videos = [
     {
         id: 1,
-        name: 'ANSIEDAD',
+        tema: 'ANSIEDAD',
         mp4: 'movie.mp4',
         ogg: 'movie.ogg',
         title: '¿Qué son las crisis de ansiedad?',
@@ -12,7 +12,7 @@ export let videos = [
 
     {
         id: 2,
-        name: 'DEPRESION',
+        tema: 'DEPRESION',
         mp4: 'movie.mp4',
         ogg: 'movie.ogg',
         title: '¿Qué es la depresión?',
@@ -23,7 +23,7 @@ export let videos = [
 
     {
         id: 3,
-        name: 'ADICCIONES',
+        tema: 'ADICCIONES',
         mp4: 'movie.mp4',
         ogg: 'movie.ogg',
         title: '¿Qué es el Trastorno por Estrés Postraumático?',
@@ -36,7 +36,7 @@ export let videos = [
 
     {
         id: 4,
-        name: 'TRASTORNOS ALIMENTICIOS',
+        tema: 'TRASTORNOS ALIMENTICIOS',
         mp4: 'movie.mp4',
         ogg: 'movie.ogg',
         title: '¿Qué son los trastornos alimentarios?',
@@ -54,3 +54,11 @@ export let videos = [
 
 
 ]
+
+
+
+export const temas = [
+    { id: 1, tema: 'ANSIEDAD' },
+    { id: 2, tema: 'DEPRESION' },
+    { id: 3, tema: 'ADICCIONES' },
+    { id: 4, tema: 'TRASTORNOS ALIMENTICIOS' }]
