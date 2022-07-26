@@ -23,7 +23,7 @@ const VideoCard = ({ styles, name, mp4, ogg, title, subTitle, texto, ul }) => {
                 <p> {texto}
                 </p>
                 <ul>
-                    {ul.map(li => <li> {li} </li>)}
+                    {ul.map((li, i) => <li key={i}> {li} </li>)}
                 </ul>
             </div>
             <div className={styles.astrodivider}>

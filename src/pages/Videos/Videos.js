@@ -1,29 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Videos.module.scss'
 import { videos } from '../../assets/videos/videos'
 import VideoCard from '../../Components/VideoCard/VideoCard'
 
 const Videos = () => {
+    const [vids, setVids] = useState(videos)
+    const [value, setValue] = useState('')
 
 
+    // const onSearch = () => {
+    //     let video = vids.filter(v => v.name === value)
+
+    //     if (value === '')
+    //         setVids(videos)
+    //     else {
+    //         setVids(video)
+    //     }
+
+    // }
+   
 
     return (
         <main className={styles.container}>
             <div className={`btn-group ${styles.search}`}>
-                <span type="button" className="btn btn-danger">🔎 Temas</span>
-                <button type="button" className="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span className="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul className="dropdown-menu P-1">
-                    <li>Ansiedad</li>
-                    <li>Depresión</li>
-                    <li>Adicciones</li>
-                    <li>Trastornos Alimenticios</li >
-                </ul >
+                <select className="form-select" aria-label="Default select example">
+                    <option value='' onChange={(e) => setValue(e.target.value)} >🔎 Temas</option>
+                    <option value='ANSIEDAD' onChange={(e) => setValue(e.target.value)} >Ansiedad</option>
+                    <option value='DEPRESION' onChange={(e) => setValue(e.target.value)}>Depresión</option>
+                    <option value='ADICCIONES' onChange={(e) => setValue(e.target.value)}>Adicciones</option>
+                    <option value='TRASTORNOS ALIMENTICIOS' onChange={(e) => setValue(e.target.value)} >Trastornos Alimenticios</option>
+                </select>
             </div >
 
             {
-                videos.map(video =>
+                vids.map(video =>
                 (
                     <VideoCard
                         styles={styles}
@@ -34,6 +44,7 @@ const Videos = () => {
                         subTitle={video.subTitle}
                         texto={video.texto}
                         ul={video.ul}
+                        key={video.id}
                     />
                 ))
             }
