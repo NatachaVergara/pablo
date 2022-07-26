@@ -21,12 +21,14 @@
         margin: auto;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
 
         .card {
-            width: 25%;
+            width: 20%;
             margin: auto;
+            padding: 10px;
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -36,7 +38,6 @@
                 width: 250px;
                 height: 200px;
                 padding: 10px;
-
 
             }
 
@@ -48,7 +49,21 @@
                 box-shadow: 1px 1px #66BDB7;
             }
 
+
+            @media screen and (max-width: 778px) {
+                width: 40%;
+                margin-top:10px;
+
+            }
+
+            @media screen and (max-width: 500px){
+                width: 100%;
+                margin-top:10px;
+            }
+
         }
+
+
     }
 
 
@@ -57,9 +72,6 @@
         height: 100%;
         margin: 150px auto;
 
-        .card {
-            margin: auto 10px;
-        }
 
     }
 
