@@ -30,6 +30,9 @@ const Header = () => {
                                 <a className={`nav-link active ${styles.navLink} `} aria-current="page" href="#">Inicio</a>
                             </li>
                             <li className="nav-item">
+                                <a className={`nav-link active ${styles.navLink} `} aria-current="page" href="#sobreMi">Sobre mi</a>
+                            </li>
+                            <li className="nav-item">
                                 <a className={`nav-link active ${styles.navLink} `} href="#practica">Práctica</a>
                             </li>
                             <li className="nav-item">
