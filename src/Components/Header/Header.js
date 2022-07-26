@@ -29,7 +29,7 @@ const Header = () => {
                         <ul className={`navbar-nav  ${styles.nav}`}>
                             <li className="nav-item">
                                 <Link className={`nav-link active ${styles.navLink} `} aria-current="page" to={'/'}>inicio</Link>
-                            </li>
+                            </li>                          
                             <li className="nav-item">
                                 <Link className={`nav-link active ${styles.navLink} `} to='/practica'>Práctica</Link>
                             </li>

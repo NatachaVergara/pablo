@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 .container {
-  margin-top: 2rem;
+  width: 100%;
   box-shadow: teal 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 
   section {
     width: 100%;
   }
 
-  h1 {
-    text-align: center;
-    margin-top: 2rem;
-    text-decoration: underline;
-    letter-spacing: 3px;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
-  h4 {
-    margin: 2rem 1rem;
-    font-weight: 200;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
+
+
 }
 
 .parrafos {
@@ -26,100 +33,25 @@
 
   .sobreMi {
     color: black;
-    /* width: 70%; */
-    margin-left: 0.5rem;
-    padding: 0rem;
+    width: 90%;
+    margin: auto;
     font-size: 1.2rem;
     font-family: 'Merriweather', serif;
-    // text-indent: 1.5rem;
-    // text-align: center;
-  }
-}
-
-
-
-
-@-webkit-keyframes slide-fwd-center {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-  100% {
-    -webkit-transform: translateZ(160px);
-    transform: translateZ(160px);
-  }
-}
-
-@keyframes slide-fwd-center {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-  100% {
-    -webkit-transform: translateZ(160px);
-    transform: translateZ(160px);
-  }
-}
-
-
-.contacto {
-  animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-  -moz-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-  -ms-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-
-
-  h1 {
-    text-align: center;
-    margin-top: 2rem;
-    text-decoration: underline;
-    letter-spacing: 3px;
 
   }
 
-  h4 {
-    margin: 2rem 1rem;
-    font-weight: 200;
-
+  h5 {
+    margin-top: 30px;
   }
 
-
-  .lead {
-    margin-top: 1rem;
-    font-family: 'Merriweather', serif;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    display: inline-block;
-    width: fit-content;
-    align-self: center;
-    padding: 0rem 0rem 0.7rem 1rem;
-
-  }
-
-
-  .redes {
-    text-align: center;
-    margin-top: 1.5rem;
-  }
-
-  .iconos {
-    font-size: 3rem;
-
-    .faWhatsapp {
-      font-size: 3rem;
-      color: green;
+  @media screen and (max-width: 1000px){
+    h3{
+      margin-top: 30px;
     }
 
-    .faFacebook {
-      font-size: 3rem;
-      color: #2962ff;
+    h5{
+      padding:15px;
     }
-
   }
-
-
-
 
 }
