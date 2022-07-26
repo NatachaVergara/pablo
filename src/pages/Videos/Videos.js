@@ -14,6 +14,7 @@ const Videos = () => {
 
     return (
         <main className={styles.container}>
+            <div className={styles.banner}></div>
             <div className={`dropdown ${styles.search}`}>
                 <button className="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     🔎 Temas

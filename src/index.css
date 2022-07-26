@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.banner {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -240px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bVideos {
+  background-image: url('./assets/img/bannerVideo.jpg');
+}
+
+.bPractica {
+  background-image: url('./assets/img/bannerPractica.jpg')
+}
+
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    height: 30vh;
+    background-position-y: 0px;
+    background-size: contain;
+    background-position-x: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    display: none;
+  }
 }

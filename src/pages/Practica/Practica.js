@@ -20,6 +20,7 @@ const Practica = () => {
 
   return (
     <main className={styles.container}>
+      <div className={styles.banner}></div>
       <div className={styles.sectionContainer}>
         {info.map(i => (
 
