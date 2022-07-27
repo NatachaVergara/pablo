@@ -36,6 +36,11 @@
             margin: auto;
             display: flex;
             align-items: center;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             img {
                 width: 250px;
@@ -56,6 +61,8 @@
                 width: 100%;
                 margin-top: 20px;
             }
+
+
 
         }
 

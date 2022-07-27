@@ -9,7 +9,7 @@ const Section = () => {
         <div className={`parrafos ${styles.parrafos}`} >
           <h3 className="text-center" id="sobre-mi">Sobre mi</h3>
           <br />
-          <p className={styles.sobreMi}>
+          <p className={`${styles.sobreMi} ${styles.letra}` }>
             Soy psicologo psicoanalista hace 11 años. Mi práctica se centra en el análisis y la superación del padecimiento en adolescentes, jovenes y adultos.
           </p>
           <p className={styles.sobreMi}>
